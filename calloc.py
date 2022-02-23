@@ -341,6 +341,5 @@ def swap(list, p1, p2):
     list[p1], list[p2] = list[p2], list[p1]
     return list
 
-#Testing 0
 if __name__ == '__main__':
     initiate()
