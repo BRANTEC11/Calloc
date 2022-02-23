@@ -207,9 +207,6 @@ def allocation(songList,lenList, currLen, numSong, addList, fullLen):
     else: 
         print("Track List Successfully Allocated!")
     return partition
-
-    
-
 def addSong(songList,lenList,currLen,numSong, addList): 
     numNewSong = input(f"\nPlease input the amount of songs you would like to add: ")
     if (numNewSong.isnumeric() == False):
@@ -250,7 +247,6 @@ def removeSong(songList,lenList,currLen,numSong, addList):
    
 def removeAllSong(songList,lenList,currLen,numSong, addList): 
     choice = input(f"\nAre you sure you want to remove every song? [y/n]: ")
-    
     if (choice == 'y'):
         songList = []
         lenList = []
@@ -309,7 +305,6 @@ def relenTrack(songList,lenList, currLen, numSong, addList):
         currLen -= (time2sec(oldLen) - time2sec(newLen))
         return [songList,lenList, currLen, numSong, addList]
   
-
 def longestTrack(songList):
     i = 0
     longest = 0
